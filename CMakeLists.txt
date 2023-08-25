@@ -160,6 +160,10 @@ add_executable(test_random_cobot_node src/test_random_cobot.cpp)
 add_dependencies(test_random_cobot_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(test_random_cobot_node ${catkin_LIBRARIES})
 
+add_executable(test_custom_cobot_node src/test_custom_cobot.cpp)
+add_dependencies(test_custom_cobot_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(test_custom_cobot_node ${catkin_LIBRARIES})
+
 #############
 ## Install ##
 #############

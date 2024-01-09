@@ -26,13 +26,13 @@ int main(int argc, char **argv)
 
     // Target position
     geometry_msgs::Pose target_pose1;
-    target_pose1.orientation.w = 0;
     target_pose1.orientation.x = 0;
     target_pose1.orientation.y = 0;
     target_pose1.orientation.z = 0;
+    target_pose1.orientation.w = 1;
 
-    target_pose1.position.x = -1;
-    target_pose1.position.y = -1;
+    target_pose1.position.x = 1;
+    target_pose1.position.y = 1;
     target_pose1.position.z = 1;
     group.setPoseTarget(target_pose1);
 

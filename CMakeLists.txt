@@ -164,6 +164,26 @@ add_executable(test_custom_cobot_node src/test_custom_cobot.cpp)
 add_dependencies(test_custom_cobot_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(test_custom_cobot_node ${catkin_LIBRARIES})
 
+add_executable(add_collision_object_cobot_node src/add_collision_object_cobot.cpp)
+add_dependencies(add_collision_object_cobot_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(add_collision_object_cobot_node ${catkin_LIBRARIES})
+
+add_executable(attach_detach_object_cobot_node src/attach_detach_object_cobot.cpp)
+add_dependencies(attach_detach_object_cobot_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(attach_detach_object_cobot_node ${catkin_LIBRARIES})
+
+add_executable(checking_collision_cobot_node src/checking_collision.cpp)
+add_dependencies(checking_collision_cobot_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(checking_collision_cobot_node ${catkin_LIBRARIES})
+
+add_executable(pick_and_place_cobot_node src/pick_place_cobot.cpp)
+add_dependencies(pick_and_place_cobot_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(pick_and_place_cobot_node ${catkin_LIBRARIES})
+
+add_executable(pick_and_place_gazebo_node src/pick_place_gazebo.cpp)
+add_dependencies(pick_and_place_gazebo_node ${cobot_test_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(pick_and_place_gazebo_node ${catkin_LIBRARIES})
+
 #############
 ## Install ##
 #############
